@@ -1,15 +1,36 @@
 body {
-  background-color: whitesmoke;
-  display: flex;
+  background-color: black;
+  background-image: url("../Mejorado/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+.formulario {
+  background-color: transparent;
+  display: flex;
+  height: 100%;
+  width: 100%;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #212121;
+  padding: 2%;
+  color: white;
+  border-radius: 70px;
 }
-h3 {
+
+h2 {
+  padding: 1%;
+  color: white;
+  background-color: #212121;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 70px;
 }
 .persona {
   display: flex;
@@ -35,27 +56,20 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
 }
-.cerrar {
-  background: url(cancel.png) no-repeat;
-  width: 26px;
-  height: 26px;
-  top: -9px;
-  right: -9px;
 
-  cursor: pointer;
-  height: 30px;
-  width: 30px;
-}
-.input {
+input {
   border-style: solid;
   border-width: 1px;
   border-radius: 100px;
-  background-color: white;
+  color: white;
+  padding: 1%;
+  text-align: center;
 }
 
 .center {
-  padding-left: 10%;
-  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #boton {
   display: inline-block;
@@ -65,33 +79,62 @@ h3 {
   color: #ffffff;
   text-align: center;
   font-size: 28px;
-  padding: 20px;
+  padding: 25px;
   width: 200px;
   transition: all 0.5s;
   cursor: pointer;
   margin-top: 20px;
-
+  cursor: pointer;
   height: fit-content;
   width: fit-content;
-}
-#button span {
-  cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-#button span:after {
-  content: "\00bb"; /* Entidades CSS. Para usar entidades HTML, use &#8594;*/
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+
+.persona {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 25vw;
 }
-#button:hover span {
-  padding-right: 25px;
+.nombre {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  padding: 0;
 }
-#button:hover span:after {
-  opacity: 1;
-  right: 0;
+.costo {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  padding: 0;
+}
+.promedio {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  text-align: center;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+}
+.cerrar {
+  background-image:url("/Mejorado/cerrarr.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  
+}
+@media (max-width: 1250px) {
+  body {
+    background-size: contain;
+  }
 }
