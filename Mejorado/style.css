@@ -1,0 +1,97 @@
+body {
+  background-color: whitesmoke;
+  display: flex;
+  height: 100vh;
+  width: 100vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+h1 {
+}
+h3 {
+}
+.persona {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nombre {
+  margin: 30px;
+}
+.costo {
+  margin: 30px;
+}
+.promedio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#resultados {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cerrar {
+  background: url(cancel.png) no-repeat;
+  width: 26px;
+  height: 26px;
+  top: -9px;
+  right: -9px;
+
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+.input {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 100px;
+  background-color: white;
+}
+
+.center {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#boton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 20px;
+
+  height: fit-content;
+  width: fit-content;
+}
+#button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#button span:after {
+  content: "\00bb"; /* Entidades CSS. Para usar entidades HTML, use &#8594;*/
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#button:hover span {
+  padding-right: 25px;
+}
+#button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
