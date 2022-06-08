@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  background-image: url("../Mejorado/background.png");
+  background-image: url("../repartir_gastos/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -126,7 +126,7 @@ input {
   color: white;
 }
 .cerrar {
-  background-image:url("/Mejorado/cerrarr.png");
+  background-image:url("/cerrarr.png");
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
